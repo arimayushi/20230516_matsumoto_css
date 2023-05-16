@@ -1,0 +1,54 @@
+span {
+  color: navy;
+}
+
+h2 {
+  font-size: 20px;
+  position: relative;
+  margin-left: 1em;
+  top: 20px;
+}
+
+h2::after {
+  content: "毎日を笑顔に";
+  font-size: 60px;
+  color: black; 
+  position: absolute;
+  top: 355px;
+  left: -19px;
+}
+
+nav {
+  width: 500px;
+}
+
+ul {
+  display: flex;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 850px;
+}
+
+li {
+  list-style: none;
+  margin-left: 2em;
+}
+
+.blue-box {
+  width: 950px;
+  height: 150px;
+  background-color: navy;
+  left: -1px;
+}
+
+.relative {
+  position: relative;
+  top: 410px;
+}
+
+.absolute__img {
+  position: absolute;
+  top: 129px;
+  left: 626px;
+}
