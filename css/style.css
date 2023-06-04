@@ -1,54 +1,107 @@
-span {
-  color: navy;
+@media screen and (max-width:767px) {}
+@media screen and (min-width:768px) and (max-width:991px) {}
+@media screen and (min-width:992px) {}
+
+html {
+  width: 100vw;
+  height: 100vh;
 }
 
-h2 {
-  font-size: 20px;
+.body {
+  display: flex;
+  box-sizing: border-box;
   position: relative;
-  margin-left: 1em;
-  top: 20px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-h2::after {
-  content: "毎日を笑顔に";
-  font-size: 60px;
-  color: black; 
-  position: absolute;
-  top: 355px;
-  left: -19px;
+header {
+  width: 100vw;
+  height: 20vh;
 }
 
 nav {
-  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: navy;
+  width: 100vw;
+  height: 20vh;
+}
+
+h2 {
+  width: 50vw;
+  justify-content: flex-start;
+  font-size: 2vw;
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 3vh;
 }
 
 ul {
   display: flex;
-  font-weight: bold;
   position: absolute;
-  top: 20px;
-  left: 850px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 25vw;
+  flex-wrap: no-wrap;
+  white-space: no-wrap;
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 4vh 0 0 73vw;
+  padding: 0vh 0vw 0vh 0vw;
 }
 
 li {
+  width: 50vw;
   list-style: none;
-  margin-left: 2em;
+  margin: 0vh 0vw 0vh 0vw;
+  padding: 0vh 0vw 0vh 0vw;
 }
 
-.blue-box {
-  width: 950px;
-  height: 150px;
-  background-color: navy;
-  left: -1px;
-}
-
-.relative {
+.main {
+  display: flex;
   position: relative;
-  top: 410px;
+  width: 100vw;
+  height: 80vh;
 }
 
-.absolute__img {
+.firstview {
+  display: flex;
   position: absolute;
-  top: 129px;
-  left: 626px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 50vw;
+  height: 63vh;
+  margin: 0;
+  padding: 0;
+  top: 18vh;
+  left: 50vw;
+  Z-index: 10;
+}
+
+h1 {
+  display: flex;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  justify-content: center;
+  align-items: center; 
+  top: 62vh;
+}
+
+.navy-box {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  width: 74vw;
+  height: 25vh;
+  margin: 48vh 0 0 0;
+  padding: 0;
+  background-color: navy;
+  Z-index: 0;
 }
